@@ -14,6 +14,8 @@
    - 1.10 [Connection](#connection)
 
 ## DS18B20 Temperature Sensor
+![image](https://github.com/KetanMe/Aquiring-Motor-Tempreature/assets/121623546/14e62a3b-48f8-4a96-8421-c009bff75a27)
+
 
 ### Introduction
 
