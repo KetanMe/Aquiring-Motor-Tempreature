@@ -13,7 +13,7 @@
    - 1.9 [Pinout](#pinout)
    - 1.10 [Connection](#connection)
 
-2. [Interfacing the Sensor](interfacing-the-sensor)
+2. [Interfacing the Sensor](#2-interfacing-the-sensor)
    - 2.1 [The Need for an SD Card Module](#21-the-need-for-an-sd-card-module)
    - 2.2 [Temperature Data Logging Code](#22-temperature-data-logging-code)
  
