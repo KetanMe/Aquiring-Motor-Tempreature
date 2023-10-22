@@ -1,1 +1,99 @@
-# Aquiring-Motor-Tempreature
+# Acquiring Motor Temperature with DS18B20
+
+## Table of Contents
+1. [DS18B20 Temperature Sensor](#ds18b20-temperature-sensor)
+   - 1.1 [Introduction](#introduction)
+   - 1.2 [Initialization Sequence](#initialization-sequence)
+   - 1.3 [Read/Write Time Slots](#readwrite-time-slots)
+   - 1.4 [Read Time Slots](#read-time-slots)
+   - 1.5 [Absolute Maximum Ratings](#absolute-maximum-ratings)
+   - 1.6 [DC Electrical Characteristics](#dc-electrical-characteristics)
+   - 1.7 [AC Electrical Characteristics](#ac-electrical-characteristics)
+   - 1.8 [Memory](#memory)
+   - 1.9 [Pinout](#pinout)
+   - 1.10 [Connection](#connection)
+
+## DS18B20 Temperature Sensor
+
+### Introduction
+
+In our project, we utilized the DS18B20 temperature sensor to accurately measure and monitor the temperature of our Permanent Magnet Synchronous Motor (PMSM). This sensor's precision and reliability played a crucial role in maintaining optimal operating conditions for our motor.
+
+### Initialization Sequence
+
+- The communication starts with a reset pulse from the master and a presence pulse from DS18B20.
+- Reset pulse: 480μs low, followed by release.
+- Presence pulse: DS18B20 responds by pulling low for 60μs to 240μs.
+
+### Read/Write Time Slots
+
+- Data is transmitted in 1-Wire bus time slots.
+- Two types of write time slots: "Write 1" and "Write 0."
+- Both types initiated by pulling the 1-Wire bus low.
+- "Write 1" involves releasing the bus within 15μs.
+- "Write 0" keeps the bus low for at least 60μs.
+
+### Read Time Slots
+
+- DS18B20 transmits data in response to master's read time slots.
+- Read time slots must be at least 60μs in duration.
+- The DS18B20 sends "1" by leaving the bus high and "0" by pulling the bus low.
+- Master must sample the bus state within 15μs after the falling edge that initiated the read time slot.
+
+### Absolute Maximum Ratings
+
+- Voltage range on any pin: -0.5V to +6.0V.
+- Operating temperature range: -55°C to +125°C.
+- Storage temperature range: -55°C to +125°C.
+- Solder temperature: Follow IPC/JEDEC J-STD-020 Specification.
+
+### DC Electrical Characteristics
+
+- Supply voltage (VDD) range: +3.0V to +5.5V.
+- Input logic low voltage (VIL): -0.3V to +0.8V.
+- Input logic high voltage (VIH): The lower of 5.5V or VDD + 0.3V.
+- Standby current: 750nA to 1000nA.
+
+### AC Electrical Characteristics
+
+- Temperature conversion time: 93.75ms (9-bit), 750ms (12-bit).
+- Presence-detect high: 15μs to 60μs.
+- Presence-detect low: 60μs to 240μs.
+- Capacitance: 25pF.
+
+### Memory
+
+- The DS18B20 has non-volatile memory (NV).
+- EEPROM write cycle time: 10ms.
+- EEPROM data retention: 10 years.
+
+### Pinout
+
+![image](https://github.com/KetanMe/Aquiring-Motor-Tempreature/assets/121623546/14151c28-e50c-4584-882b-a56b06057b62)
+
+
+The DS18B20 temperature sensor has three pins:
+
+1. **VDD (Power Supply Voltage):**
+   - VDD is the power supply voltage pin.
+   - It typically operates within a range of +3.0V to +5.5V.
+   - This pin provides the necessary power for the sensor to function.
+
+2. **GND (Ground):**
+   - GND is the ground or common reference voltage pin.
+   - It should be connected to the system's ground for proper electrical reference.
+
+3. **DQ (Data):**
+   - DQ is the data pin and is used for communication with the sensor.
+   - All data exchange and commands are transmitted and received through this pin.
+   - DQ operates in a 1-Wire communication protocol, allowing for single-wire data transfer.
+
+## Connection
+
+![image](https://github.com/KetanMe/Aquiring-Motor-Tempreature/assets/121623546/c435f7b0-9452-4cdc-a4d1-2b3ec22657f1)
+
+
+- Connect the DS18B20's VDD pin to your power supply (3.0V to 5.5V).
+- Connect the DS18B20's GND pin to ground.
+- Connect the DS18B20's DQ (Data) pin to your microcontroller or host device.
+- Place a 4.7kΩ resistor between the DQ pin and the VDD pin of the DS18B20.
