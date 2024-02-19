@@ -17,8 +17,7 @@
    - 2.1 [The Need for an SD Card Module](#21-the-need-for-an-sd-card-module)
    - 2.2 [Temperature Data Logging Code](#22-temperature-data-logging-code)
    - 2.3 [Mounting of the sensors](#23-mounting-of-the-sensors)
-   - 2.4 [Data Logged in the SD card](#24-data-logged-in-the-sd-card)
-   - 2.5 [Temperature Data](#25-temperature-data)
+   - 2.4 [Temperature Data](#24-temperature-data)
    
  
 
@@ -157,15 +156,9 @@ Three temperature sensors are mounted on the Permanent Magnet Synchronous Motor 
 
 ![Motor Sensors](https://github.com/KetanMe/Aquiring-Motor-Tempreature/blob/main/Screenshot%202023-10-22%20101133.png)
 
-### 2.4 Data Logged in the SD card
 
-**Temperature Sensor Integration with PMSM Motor**
 
-Three temperature sensors are mounted on the Permanent Magnet Synchronous Motor (PMSM) as shown in the image below:
-
-![Motor Sensors](https://github.com/KetanMe/Aquiring-Motor-Tempreature/blob/main/Screenshot%202023-10-22%20101133.png)
-
-### 2.5 Temperature Data
+### 2.4 Temperature Data
 
 The temperature data logged in the CSV file can be found [here](https://github.com/KetanMe/Aquiring-Motor-Tempreature/blob/main/Three_Temperature_Sensor_Data.csv). 
 
