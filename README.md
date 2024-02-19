@@ -1,4 +1,4 @@
-# Acquiring Motor Temperature with DS18B20
+# Motor Temperature Logging with SD Card
 
 ## Table of Contents
 1. [DS18B20 Temperature Sensor](#1-ds18b20-temperature-sensor)
