@@ -27,7 +27,7 @@
 
 ### Introduction
 
-In our project, we utilized the DS18B20 temperature sensor to accurately measure and monitor the temperature of our Permanent Magnet Synchronous Motor (PMSM). This sensor's precision and reliability played a crucial role in maintaining optimal operating conditions for our motor.
+In my project, I utilized the DS18B20 temperature sensor to accurately measure and monitor the temperature of our Permanent Magnet Synchronous Motor (PMSM). This sensor's precision and reliability played a crucial role in maintaining optimal operating conditions for our motor.
 
 ### Initialization Sequence
 
