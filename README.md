@@ -13,9 +13,9 @@
    - 1.9 [Pinout](#pinout)
    - 1.10 [Connection](#connection)
 
-2. [Interfacing the Sensor](interfacing-the-sensor)
-   - 2.1 [The Need for an SD Card Module](the-need-for-an-sd-card-module)
-   - 2.2 [Temperature Data Logging Code](temperature-data-logging-code)
+2. [Interfacing the Sensor](#2-interfacing-the-sensor)
+   - 2.1 [The Need for an SD Card Module](#21-the-need-for-an-sd-card-module)
+   - 2.2 [Temperature Data Logging Code](#22-temperature-data-logging-code)
    - 2.3 [Mounting of the sensors](#23-mounting-of-the-sensors)
    - 2.4 [Data Logged in the SD card](#24-data-logged-in-the-sd-card)
    - 2.5 [Temperature Data](#25-temperature-data)
@@ -138,7 +138,7 @@ If you work as an embedded engineer in the electronics industry, you've likely e
 
 ### 2.2 Temperature Data Logging Code
 
-*Refer to this [link](https://github.com/KetanMe/Aquiring-Motor-Tempreature/blob/main/tempdata_three_sensors.ino) for the temperature data logging code.*
+[Here](#22-temperature-data-logging-code) is the temperature data logging code.
 
 **Connection of Micro SD Card Module to the Arduino:**
 - SCK (Serial Clock) to D13 on the Arduino.
@@ -171,8 +171,9 @@ The temperature data logged in the CSV file can be found [here](https://github.c
 
 You can click the link to view the complete CSV table.
 
+---
 
+## Complete Temperature Data Logging Code
 
-
-
+You can find the complete temperature data logging code in the Arduino sketch file provided [here](https://github.com/KetanMe/Aquiring-Motor-Tempreature/blob/main/tempdata_three_sensors.ino). This code enables interfacing with the DS18B20 temperature sensors and logging the data onto an SD card module connected to an Arduino.
 
