@@ -147,3 +147,6 @@ If you work as an embedded engineer in the electronics industry, you've likely e
 **Preparing the Micro SD Card Module:**
 Before inserting the SD Card into the SD card reader module, ensure it's correctly formatted. The module can read FAT16 or FAT32 file systems. Even if the SD card is new and comes pre-formatted, it's a good practice to reformat it to minimize potential issues during operation.
 
+**Mounting of the sensors**
+
+
